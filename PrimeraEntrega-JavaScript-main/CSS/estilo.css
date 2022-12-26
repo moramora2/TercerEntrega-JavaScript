@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.cabezal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(196, 199, 196, 0.3); }
+  .cabezal h1 {
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+  .cabezal .logo img {
+    width: 100px; }
+  .cabezal nav ul li {
+    list-style: none;
+    background-color: #8f0f0f;
+    padding: 5px;
+    border-radius: 5px; }
+    .cabezal nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      padding: 3px; }
+
+.body-index {
+  background-image: url("../img/portada.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .body-index main {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .body-index main .h2 {
+      font-size: medium;
+      text-align: center; }
+
+@media screen and (min-width: 600px) {
+  main {
+    height: 55vh;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2fr);
+    grid-template-rows: 0.5fr 1fr 0.5fr 0.5fr;
+    grid-template-areas: "h2 mainText";
+    justify-items: center; }
+    main .main-texto {
+      grid-area: mainText; }
+    main .h2 {
+      grid-area: h2; } }
+
+footer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+  bottom: 0;
+  flex-direction: column;
+  text-align: center;
+  background: rgba(196, 199, 196, 0.3); }
+  footer .parrafos {
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+    footer .parrafos p {
+      margin: 0px; }
+  footer .redes img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    animation-name: animacion;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    border-radius: 20px; }
+
+@keyframes animacion {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(5px); }
+  100% {
+    transform: translateY(0); } }
+  footer .derechos {
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+
+@media screen and (min-width: 600px) {
+  .cabezal {
+    justify-content: space-between;
+    flex-direction: row; }
+    .cabezal nav {
+      display: block;
+      padding: 10px; }
+      .cabezal nav ul {
+        display: flex;
+        column-gap: 20px; }
+        .cabezal nav ul li {
+          list-style: none;
+          background-color: #8f0f0f;
+          padding: 5px;
+          border-radius: 5px; }
+          .cabezal nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            padding: 3px; } }
+
+footer {
+  justify-content: space-between;
+  flex-flow: row wrap;
+  width: 100%; }
+
+main {
+  height: 650px; }
+
+.main-contacto {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .main-contacto .mapa img {
+    width: 300px;
+    border: 1px solid #555;
+    filter: drop-shadow(4px 3px 2px #5e5d5d); }
+  .main-contacto .input-group {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: #F5EDDC;
+    margin: 20px; }
+    .main-contacto .input-group input {
+      width: 300px;
+      display: inline-block;
+      flex: 1; }
+    .main-contacto .input-group .mensaje {
+      width: 300px; }
+    .main-contacto .input-group button {
+      width: 100px;
+      height: 50px;
+      margin-top: 15px;
+      padding: 8px;
+      color: white;
+      background-color: #d31414; }
+
+    #btnEliminar{
+      width: 100px;
+      height: 65px;
+      margin-top: 15px;
+      padding: 8px;
+      color: white;
+      background-color: #d31414;    
+      }
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%; }
+
+.carrousel {
+  width: auto; }
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .cabezal {
+    justify-content: space-between;
+    flex-direction: row; }
+    .cabezal nav {
+      display: block;
+      padding: 10px; }
+      .cabezal nav ul {
+        display: flex;
+        column-gap: 20px; }
+        .cabezal nav ul li {
+          list-style: none;
+          background-color: #8f0f0f;
+          padding: 5px;
+          border-radius: 5px; }
+          .cabezal nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            padding: 3px; } }
+
+footer {
+  justify-content: space-between;
+  flex-flow: row wrap;
+  width: 100%; }

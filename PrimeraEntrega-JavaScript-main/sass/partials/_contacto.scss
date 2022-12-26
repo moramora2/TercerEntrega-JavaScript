@@ -1,0 +1,46 @@
+
+@mixin estilo_flex ($display, $flex-dir, $align){
+    display: $display;
+    flex-direction: $flex-dir;
+    align-items: $align;
+}
+
+
+.main-contacto{  
+    height: 600px;
+    @include estilo_flex(flex, column,center);
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    .mapa img{
+        width: 300px;   
+        border: 1px solid #555;
+        filter: drop-shadow(4px 3px 2px rgb(94, 93, 93));
+    }
+    .input-group {
+        width: 400px;
+        @include estilo_flex(flex, column, center);
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        padding: 15px;
+        background-color: #F5EDDC;
+        margin: 20px;
+        input {
+            width: 300px;
+            display: inline-block;
+            flex: 1;
+        }
+        .mensaje{
+            width: 300px;
+        }
+        button{
+            width: 100px;
+            height: 50px;
+            margin-top: 15px;
+            padding: 8px;
+            color: white;
+            background-color: #d31414;
+        }
+    }
+}
